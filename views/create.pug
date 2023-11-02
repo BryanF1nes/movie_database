@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .create-movie.content
+    form(action='/movie' method='POST')
+      label(for='title') Movie title:
+      input#title(type='text' name='title' required='')
+      label(for='director') Director:
+      input#director(type='text' name='director' required='')
+      label(for='description') Description:
+      textarea#description(name='description' required='')
+      button Submit

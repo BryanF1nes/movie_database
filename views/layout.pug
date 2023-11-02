@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav
+      .site-title
+        a(href='/')
+          h1= title
+        p An movie inventory site
+      ul
+        li
+          a(href='/') Movie
+        li
+          a(href='/movie/create') Add Movie
+        li
+          a(href='/about') About us
+
+    
+    block content
+    

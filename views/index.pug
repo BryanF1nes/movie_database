@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .section
+    h1= title
+    p Welcome to #{title}
+
+  .movies.content  
+    if (movies.length > 0)
+      each movie in movies 
+        a(href=`/movies/${movie._id}`)
+          h3(class="title")= movie.title
+          p(class="director")= movie.director 
+    else
+      p There are no movies listed...
